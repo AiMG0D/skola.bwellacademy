@@ -1,0 +1,55 @@
+.button:not([shape='round']) {
+  --border-radius: 1.875px;
+  --padding-bottom: var(--padding-top);
+  --padding-end: var(--padding-start);
+  --padding-start: 0.625rem;
+  --padding-top: 1.375rem;
+  @apply text-lg font-bold;
+  text-transform: normal;
+}
+.button[size='small']:not([shape='round']) {
+  font-size: 0.875rem;
+  line-height: 14px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  --padding-start: 1.5rem;
+  --padding-top: 0.5rem;
+}
+
+.button.button-has-icon-only {
+  font-size: 1rem;
+  --padding-start: 1rem;
+  --padding-end: 1rem;
+}
+.button.button-has-icon-only.button-small {
+  height: 2.8em;
+  font-size: 0.75rem;
+  --padding-start: 0.75rem;
+  --padding-end: 0.75rem;
+}
+
+.button [slot='start'] {
+  margin-right: 1rem;
+  font-size: 1.8em;
+  vertical-align: middle;
+}
+
+/* .button:not([color='secondary']) {
+  --box-shadow: theme('boxShadow.DEFAULT');
+}
+.button:not([color='secondary']).ion-activated {
+  --box-shadow: theme('boxShadow.active');
+}
+
+.button.ion-color-primary-inverted {
+  --box-shadow: theme('boxShadow.DEFAULT');
+}
+.button.ion-color-primary-inverted.ion-activated {
+  --box-shadow: theme('boxShadow.active');
+} */
+
+button.vjs-big-play-button {
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate3d(-50%, -50%, 0);
+}

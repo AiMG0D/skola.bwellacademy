@@ -1,0 +1,21 @@
+/* html,
+html.ios {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+}
+ */
+
+:root {
+  scrollbar-width: thin;
+}
+
+a.show-image-popup {
+  @apply block text-black mt-2 no-underline text-base font-normal relative pl-6;
+}
+a.show-image-popup:before {
+  content: 'Tryck här för att se ';
+}
+a.show-image-popup:after {
+  content: 'i';
+  @apply left-0.5 top-1/2 -translate-y-1/2 absolute w-4 h-4 flex items-center justify-center bg-green-darker text-white text-[10px] font-[arial] font-bold rounded-full;
+}

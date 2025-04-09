@@ -1,0 +1,7 @@
+{
+  "name": "bwell-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

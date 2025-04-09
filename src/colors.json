@@ -1,0 +1,34 @@
+{
+  "purple": {
+    "background": "#fffafd",
+    "lighter": "#f1ebef",
+    "light": "#e1b6d6",
+    "DEFAULT": "#b26fa1",
+    "dark": "#8d3e79",
+    "darker": "#752661"
+  },
+  "yellow": {
+    "background": "#fffbee",
+    "lighter": "#fff3d2",
+    "light": "#ffdd7d",
+    "DEFAULT": "#f5cc59",
+    "dark": "#fdc833",
+    "darker": "#ab8008"
+  },
+  "blue": {
+    "background": "#f3fffe",
+    "lighter": "#dfefed",
+    "light": "#b0e4dc",
+    "DEFAULT": "#88cfc4",
+    "dark": "#2b9984",
+    "darker": "#21806e"
+  },
+  "green": {
+    "background": "#f9fdf2",
+    "lighter": "#e2ead6",
+    "light": "#cbe7a5",
+    "DEFAULT": "#b2d87e",
+    "dark": "#72a231",
+    "darker": "#4c8201"
+  }
+}
