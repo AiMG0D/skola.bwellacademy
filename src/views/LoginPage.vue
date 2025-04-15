@@ -5,12 +5,13 @@ import {useStore} from '@/stores/main';
 import {useBackendFetch} from '@/fetch';
 import {useNetwork} from '@vueuse/core';
 import {FmsType} from "@/types";
-import {inject} from "vue";
+import {inject, ref} from "vue"; // Import ref from Vue
 
 const store = useStore();
 
-const email = $ref('');
-const password = $ref('');
+// Replace $ref with ref
+const email = ref('');
+const password = ref('');
 
 const router = useIonRouter();
 
@@ -18,7 +19,7 @@ const fmsType: FmsType = inject('fms-type') as FmsType;
 
 function login2() {
   // TODO: Login logic
-  store.setUserInfo(email.value);
+  store.setUserInfo(email.value); // Use .value to access ref values
 
   router.replace('/home');
 }
@@ -46,7 +47,11 @@ async function login() {
 
   await loading.present();
 
-  const { error, data, statusCode } = await useBackendFetch('/login').post({ email, password }).json();
+  // Pass the ref values with .value
+  const { error, data, statusCode } = await useBackendFetch('/login').post({ 
+    email: email.value, 
+    password: password.value 
+  }).json();
 
   if (error.value !== null) {
     loading.dismiss();

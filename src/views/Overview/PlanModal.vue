@@ -47,10 +47,10 @@ function close() {
           <p class="flex-1 m-0 text-base leading-normal">Detta är en gammal livsstilsplan! Innehållet nedan kan därför se lite konstigt ut.</p>
         </div>
 
-        <template v-if="fmsType === FmsType.Work">
+        <template v-if="fmsType === FmsType.School">
           <h2 class="m-0 mb-8 font-normal text-yellow-darker">Min skolgång</h2>
 
-          <WorkResult :questions="plan.questions.work.groups[0].questions" :factors="plan.profile.factors" />
+          <WorkResult :questions="plan.questions.school.groups[0].questions" :factors="plan.profile.factors" />
         </template>
         <template v-else>
           <h2 class="m-0 mb-8 font-normal text-yellow-darker">Mitt arbete</h2>

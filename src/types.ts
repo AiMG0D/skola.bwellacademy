@@ -41,5 +41,5 @@ export interface GoalPlan {
 
 export const enum FmsType {
   Work = "work",
-  School = "Work",
+  School = "school",
 }
