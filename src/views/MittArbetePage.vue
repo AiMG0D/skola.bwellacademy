@@ -67,7 +67,7 @@ const presentAlert = async (header: string, message: null|string = null, buttonT
 onMounted(async () => {
   isLoadingQuestions.value = true;
 
-  const url = fmsType === FmsType.Work ? '/questions/work' : '/questions/school';
+  const url = fmsType === FmsType.Work ? '/questions/work' : '/questions/work';
   const { data, statusCode } = await useBackendFetch(url).get().json();
 
   isLoadingQuestions.value = false;

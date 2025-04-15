@@ -1,13 +1,13 @@
 export interface ProfileValueChange {
   name: string;
   value: string;
-};
+}
 
 export interface Profile {
   id: number;
   values: object;
   factors: object;
-};
+}
 
 export interface User {
   id: number;
@@ -15,7 +15,7 @@ export interface User {
   last_name: string;
   email: string;
   company: string;
-  sex: 'U' | 'F' | 'M';
+  sex: "U" | "F" | "M";
   active_profile: Profile;
   finished_profiles: {
     id: number;
@@ -40,6 +40,6 @@ export interface GoalPlan {
 }
 
 export const enum FmsType {
-  Work = 'work',
-  School = 'school',
+  Work = "work",
+  School = "Work",
 }

@@ -34,7 +34,7 @@ const footerColor = computed(() => {
       <p class="text-lg">En stor del av dagens vakna timmar är vi på jobbet och då är det viktigt att vi trivs och mår bra. Nu ska du svara på frågor om din arbetsmiljö.</p>
     </div>
 
-    <div class="px-8 text-[#171717] min-h-[400px]" v-if="fmsType === FmsType.School">
+    <div class="px-8 text-[#171717] min-h-[400px]" v-if="fmsType === FmsType.Work">
       <h2 class="font-light text-[25px] my-8">Ditt liv i skolan.</h2>
       <p class="text-lg">En stor del av dagens vakna timmar är vi på skolan och då är det viktigt att vi trivs och mår bra. Nu ska du svara på frågor om din skolmiljö.</p>
     </div>

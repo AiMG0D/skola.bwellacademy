@@ -102,7 +102,7 @@ const alcoholDrinkingValue = computed(() => store.getProfileValue('alcoholDrinki
 <template>
   <div class="text-base mb-4" :data-name="data.name">
     <p class="w-full mt-0 text-base">
-      <template v-if="fmsType === 'school'">
+      <template v-if="fmsType === 'work'">
         Om du dricker alkohol – Hur mycket dricker du per vecka (helg)?
       </template>
       <template v-else>
